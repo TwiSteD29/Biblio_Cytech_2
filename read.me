@@ -1,0 +1,24 @@
+Projet réalisé par Mathieu SIMOND et Noa DUCAROIX--LASSEUR 
+Groupe MISE
+
+Commande pour compiler : make
+Commande pour exécuter : ./biblio_cytech
+
+Dans le menu biblio, lorsque le choix est une lettre à la place des chiffres 1 à 7, le menu boucle infiniement.
+
+Dans le menu bibliothèque, nous rencontrons un problème avec le choix 6 (Ajout_livre) : un nombre binaire s'insère dans la ligne du fichier liste_livre.txt lors de l'ajout du livre (cela correspond à la variable borrow). Cela entraine des bug dans les autres menu. Nous sommes obligé de supprimer ce caractère manuellement dans le fichier txt pour palier ce problème.  => problème corrigé
+
+
+Lorsqu'on est dans le menu biblio , si l'on choisit les choix 1 ,2 ou 3 , il faut se déconnecter puis se reconnecter pour que les choix 4, 5 , 6 fonctionne correctement.
+
+Il faut aussi mettre des "_"  à place des espaces dans les noms de livres , nom des auteurs et la catégorie lors de la saisie.
+Il ne faut pas saisir de lettres accentuées.	
+
+
+Quelques heures avant le rendu du projet nous sommes aperçus que la variable "nmb_livre" ne s'incrémente pas de +1 lorsqu'un user emprunte un livre. De ce fait, lorsque le user veut restituer son livre, il n'y a pas de livre à rendre puisque la variable "nmb_livre" vaut 0. Cela fonctionnait avant, nous n'avons pas réussi à trouver d'où vient le problème. => problème corrigé 
+
+
+
+
+
+
